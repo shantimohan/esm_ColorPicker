@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ColorPicker"
+             x:Class="ColorPicker.MainPage">
+
+    <StackLayout BackgroundColor="Indigo">
+        <Label Text="@shantimohan_e"
+               FontSize="Medium"
+               Margin="10,50,10,0"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Image HeightRequest="100"
+               WidthRequest="100"
+               BackgroundColor="Green"
+               Source="MonkeyReady2Fly.png"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Label Text="Ready to Fly with XU"
+               FontSize="Small"
+               FontAttributes="Bold"
+               TextColor="Yellow"
+               WidthRequest="300"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Label Text="A Xamarin.Forms Project using"
+               FontSize="Small"
+               FontAttributes="Italic"
+               TextColor="White"
+               Margin="0,40,0,0"
+               WidthRequest="300"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Label Text=".NET Standard Template"
+               FontSize="Small"
+               FontAttributes="Italic"
+               TextColor="White"
+               WidthRequest="300"
+               HorizontalTextAlignment="Center"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <Label Text="Background is the Selected Color"
+               x:Name="lblSelectedColor"
+               Margin="0,100,0,0"
+               FontSize="Small"
+               FontAttributes="Italic"
+               TextColor="White"
+               BackgroundColor="Red"
+               WidthRequest="300"
+               HeightRequest="100"
+               HorizontalTextAlignment="Center"
+               VerticalTextAlignment="Center"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,50,0,0">
+            <Label x:Name="lblRedValue"
+                   Margin="20,0,20,0"
+                   Text="0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Large"
+                   TextColor="White"
+                   BackgroundColor="Red"
+                   WidthRequest="80" />
+            
+            <Slider x:Name="sliderRed"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="sliderRed_ValueChanged"
+                    WidthRequest="255"
+                    HeightRequest="20" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,20,0,0">
+            <Label x:Name="lblGreenValue"
+                   Margin="20,0,20,0"
+                   Text="0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Large"
+                   TextColor="White"
+                   BackgroundColor="Green"
+                   WidthRequest="80" />
+
+            <Slider x:Name="sliderGreen"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="sliderGreen_ValueChanged"
+                    WidthRequest="255"
+                    HeightRequest="20" />
+        </StackLayout>
+
+        <StackLayout Orientation="Horizontal"
+                     Margin="0,20,0,0">
+            <Label x:Name="lblBlueValue"
+                   Margin="20,0,20,0"
+                   Text="0"
+                   HorizontalTextAlignment="Center"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontSize="Large"
+                   TextColor="White"
+                   BackgroundColor="Blue"
+                   WidthRequest="80" />
+
+            <Slider x:Name="sliderBlue"
+                    Minimum="0"
+                    Maximum="255"
+                    ValueChanged="sliderBlue_ValueChanged"
+                    WidthRequest="255"
+                    HeightRequest="20" />
+        </StackLayout>
+
+        <Label Text="#GettingStarted     #Xamarin"
+               Margin="10"
+               HorizontalOptions="Center"
+               TextColor="Yellow" />
+    </StackLayout>
+
+</ContentPage>
